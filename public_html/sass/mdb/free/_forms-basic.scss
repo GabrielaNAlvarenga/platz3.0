@@ -25,15 +25,15 @@ textarea.md-textarea {
     transition: all .3s;
     // Disabled input style
     &:disabled,
-    &:disabled,
-    &[readonly="readonly"] {
+        &:disabled,
+        &[readonly="readonly"] {
         color: $input-disabled-color;
         border-bottom: 1px dotted $input-disabled-color;
         background-color: transparent;
     }
     // Disabled label style
     &:disabled+label,
-    &[readonly="readonly"]+label {
+        &[readonly="readonly"]+label {
         color: $input-disabled-color;
         background-color: transparent;
     }
@@ -54,7 +54,7 @@ textarea.md-textarea {
     }
     // Custom Success Message
     &.valid + label:after,
-    &:focus.valid + label:after {
+        &:focus.valid + label:after {
         content: attr(data-success);
         color: $input-success-color;
         opacity: 1;
@@ -67,7 +67,7 @@ textarea.md-textarea {
     }
     // Custom Error message
     &.invalid + label:after,
-    &:focus.invalid + label:after {
+        &:focus.invalid + label:after {
         content: attr(data-error);
         color: $input-error-color;
         opacity: 1;

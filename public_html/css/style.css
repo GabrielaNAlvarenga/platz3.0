@@ -1,20 +1,35 @@
- css das paginas de fora */
+/*css das paginas de fora */
 
 /* nav*/
 .espaco
 {
     height: 110px;
 }
+/*centralizando os titulos das paginas*/
+.head-pagina
+{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
 .navbar
 {
     background: #00180a;
     padding: 10px;
 }
+.nav-inicial .link-nav-adm
+{
+    margin-top:2%;
+}
+.nav-inicial .link-nav-adm .link
+{
+    color:white;
+}
 .navbar form input {
     margin: 0;
     height: 1rem;
 }
- .navbar form .btn-login-nav {
+.navbar form .btn-login-nav {
     background: #4285F4;
     width: 90%;
     margin-top: 10%;
@@ -26,9 +41,9 @@
 }
 
 .nav-inicial .navbar-brand{ 
-	background: url(../img/Logo.png) center / contain no-repeat;
-	width: 200px;
-	height: 80px;
+    background: url(../img/Logo.png) center / contain no-repeat;
+    width: 200px;
+    height: 80px;
 }
 .navbar .navbar-nav .nav-item {
     margin-left: 0;
@@ -48,54 +63,54 @@
     left: 30%;
     padding-bottom: 30px;
     background: rgba(105 ,105, 105,0.4);
-	border-radius: 15px;
-	color: white;
+    border-radius: 15px;
+    color: white;
     bottom: 10%;
 }
 
 .slider-index
 {
-	margin-top: 60px;
+    margin-top: 60px;
 }
 .carousel-index-destaques
 {
-	margin-top: 5%;
-	margin-left: 8.5%;
+    margin-top: 5%;
+    margin-left: 8.5%;
 }
 .controls-top
 {
-	margin-left: 48%;
-	margin-bottom: 5%;
+    margin-left: 48%;
+    margin-bottom: 5%;
 }
 .btn-setas
 {
-	padding: 15px;
-	border-radius: 25px;
+    padding: 15px;
+    border-radius: 25px;
 }
 .carousel-index-destaques h1
 {
-	text-align: center;
-	margin-bottom: 80px;
+    text-align: center;
+    margin-bottom: 80px;
 }
 /* /.carousel*/
 
 /*mapa do index*/
 #map_canvas
 {
-	width: 85%;
- 	height: 500px;
- 	margin: 0 auto;
- }
- .mapa 
- {
- 	margin-top: 50%;
- 	margin-bottom: 5%;
- }
- .mapa h1
- {
- 	text-align: center;
- 	margin-bottom: 50px;
- }
+    width: 85%;
+    height: 500px;
+    margin: 0 auto;
+}
+.mapa 
+{
+    margin-top: 50%;
+    margin-bottom: 5%;
+}
+.mapa h1
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
 /* /.mapa index*/
 
 /*footer */
@@ -112,6 +127,15 @@ footer.page-footer {
     background-color: #363636;
     color: #fff;
 }
+.footer-especifico , .footer-fixo
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1500;
+    margin-top:20%;
+}
+
 /* /.footer*/
 
 /*evento especifico*/
@@ -136,8 +160,87 @@ footer.page-footer {
 /*mapa*/
 .mapa-especifico
 {
-    margin-top: 5%;
+    margin-top: 30%;
     margin-bottom: 5%;
- }
+}
+.info-especifico ,.descricao-especifico
+{
+    margin-top: 50px;    
+}
+.section .view, .section img, .z-depth-2 {
+    box-shadow: none;
+}
+
+.md-form
+{
+    /* border: 2px solid rgba(127, 140, 141,0.5); */
+    border-radius: 5px;
+    padding: 5px;
+    /* background: rgba(189, 195, 199,0.2); */
+    border-radius: 20px;
+}
+.btn-comentar
+{
+    margin-left: 45%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+.section-comentarios .section-heading
+{
+    text-align: center;
+}
+
+.social-counters button, select {
+    text-transform: none;
+    border: none;
+    background: white;
+}
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+.modal-galeria
+{
+    top: 25%;
+}
 
 /* /.evento especifico*/
+
+/*
+*PERFIL DA EMPRESA
+*/
+.img-perfil-empresa
+{
+   margin: 0 auto;
+   width: 250px;
+   height: 250px;
+   border-radius: 100px;
+}
+.bg-empresa 
+{
+    width: 100%;
+    height: 350px;
+
+}
+.bg-empresa img
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/*
+* /.PERFIL DA EMPRESA
+*/
+/*
+*CADASTRO DE USUARIO/EMPRESA
+*/
+#cadastroEmpresa , #cadastroUsuario
+{
+    display: none;
+}
+/*
+*CADASTRO DE USUARIO/EMPRESA
+*/
+

@@ -30,7 +30,7 @@
     }
     @else {
         &:focus,
-        &:hover {
+            &:hover {
             @content
         }
     }
@@ -49,7 +49,7 @@
     @else {
         &,
         &:focus,
-        &:hover {
+            &:hover {
             @content
         }
     }
@@ -58,7 +58,7 @@
 @mixin hover-focus-active {
     @if $enable-hover-media-query {
         &:focus,
-        &:active {
+            &:active {
             @content
         }
         @include hover {
@@ -67,8 +67,8 @@
     }
     @else {
         &:focus,
-        &:active,
-        &:hover {
+            &:active,
+            &:hover {
             @content
         }
     }

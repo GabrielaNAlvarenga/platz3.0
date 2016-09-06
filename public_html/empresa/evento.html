@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--
+Tela de cadastro de evento
+-->
+<html lang="pt-br" ng-app="platz">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Platz - Suas rotas, Seus Eventos</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Material Design Bootstrap -->
+        <link href="../css/mdb.min.css" rel="stylesheet">
+
+        <!-- Your custom styles (optional) -->
+        <link href="../css/style.css" rel="stylesheet">
+
+        <!-- Your custom styles (optional) -->
+        <link href="../css/styleEmpresa.css" rel="stylesheet">
+
+        <!-- link Angular -->
+        <script type="text/javascript" src="../angular/angular.js"></script>
+
+        <!-- link com o icone que fica no inicio do navegador -->
+        <link rel="icon" href="../Logo.png">
+
+
+
+    </head>
+
+    <body>
+
+
+        <!-- inicio do projeto aqui-->
+
+    <ng-include src="'../view/nav-adm.html'"></ng-include>
+
+
+    <div class="espaco"></div>
+
+    <div class="head-pagina">
+        <h1 class="titulo-meusEventos">Cadastro de Evento</h1>        
+    </div>
+
+
+    <!--Form with header-->
+    <div id="form-cad-evento">
+        <div class="card col-md-10">
+            <div class="card-block">
+                <form>
+                    <div class="col-md-12 well">
+                        <h3 class="titulo-form"><i class="fa fa-bars animated pulse infinite"></i> Evento</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">                
+                            <input type="text" id="evento-nome" class="form-control">
+                            <label for="evento-nome">Nome</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">  
+                            <input id="evento-img" type="file" multiple class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="md-form">                
+                            <textarea id="evento-descricao" class="md-textarea"></textarea>
+                            <label for="evento-descricao">Descrição</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form">                
+                            <input placeholder="Selecione uma data" type="text" id="date-picker-example" class="form-control datepicker">
+                            <label for="evento-data-inicio">Data de Inicio</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">  
+                            <input placeholder="Selecione uma data" type="text" id="date-picker-example" class="form-control datepicker">
+                            <label for="evento-data-termino">Data de Termino</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">                
+                            <input type="text" id="evento-lotacao-minima" class="form-control">
+                            <label for="evento-lotacao-minima">Lotação Minima</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">  
+                            <input type="text" id="evento-lotacao-maxima" class="form-control">
+                            <label for="evento-lotacao-maxima">Lotação Maxima</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="md-form">                
+                            <div class="btn-group">
+                                <button class="btn btn-warning dropdown-toggle" type="button" 
+                                        data-toggle="dropdown" aria-haspopup="true" 
+                                        aria-expanded="false">Categoria do Evento</button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>                                
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="md-form">                        
+                            <input type="text" id="evento-idade-minima" class="form-control">
+                            <label for="evento-idade-minima">Idade Minima</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="md-form">                        
+                            <input type="text" id="evento-preco" class="form-control">
+                            <label for="evento-preco">Preço</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="md-form">   
+                            <section title=".squaredFour">
+                                <!-- .squaredFour -->
+                                <div class="squaredFour">
+                                    <input type="checkbox" value="None" id="squaredFour" name="check" checked />
+
+                                </div>
+                                <!-- end .squaredFour -->
+                            </section>
+
+                            <label for="evento-gratuito">Evento Gratuito</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="md-form">  
+                            <input id="evento-galeria" type="file" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 well">
+                        <h3 class="titulo-form"><i class="fa fa-map-marker"></i> Endereço</h3>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form">                
+                            <input type="text" id="evento-cep" class="form-control">
+                            <label for="evento-cep">CEP</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">  
+                            <input  type="text" id="evento-numero" class="form-control">
+                            <label for="evento-numero">Número</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form">                
+                            <input type="text" id="evento-rua" class="form-control">
+                            <label for="evento-rua">Rua</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">  
+                            <input  type="text" id="evento-bairro" class="form-control">
+                            <label for="evento-bairro">Bairro</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form">                
+                            <input type="text" id="evento-complemento" class="form-control">
+                            <label for="evento-complemento">Complemento</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form">  
+                            <input  type="text" id="evento-cidade" class="form-control">
+                            <label for="evento-cidade">Cidade</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="md-form">  
+                            <button class="btn-primary btn-lg center-on-small-only btn-cancela-evento">Cancelar</button>
+                            <button class="btn-warning btn-lg center-on-small-only"> Cadastrar</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+        <!--/Form with header-->
+    </div>
+
+
+
+
+
+
+
+    <!-- /.fim do projeto-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <!-- Paginação da tabela -->
+    <script type="text/javascript" src="../js/paginacao-empresa.js"></script>
+
+    <!-- angular app script -->
+    <script type="text/javascript" src="../js/app.js"></script>
+
+
+
+</body>
+
+</html>

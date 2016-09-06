@@ -1,9 +1,9 @@
-$(document).ready(function()
+$(document).ready(function ()
 {
-$("#meumodal").modal({
-                        backdrop: 'static',
-                        keyboard: true, 
-                        show: true
-                })
+    $("#meumodal").modal({
+        backdrop: 'static',
+        keyboard: true,
+        show: true
+    })
 });
- 
+
