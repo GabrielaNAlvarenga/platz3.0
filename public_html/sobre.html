@@ -1,143 +1,174 @@
 <!DOCTYPE html>
-<html ng-app="platz">
+<html lang="pt-br" ng-app="platz">
     <head>
-        <title>Platz - Suas Rotas, Seus Eventos</title>
 
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css" media="all"/>
-        <script type="text/javascript" src="lib/jquery/jquery-3.1.0.js"></script>
-        <script type="text/javascript" src="lib/bootstrap/bootstrap.js"></script>
-        <script type="text/javascript" src="lib/angular/angular.js"></script>
-        <link href="lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
-        <script src="lib/ie-emulation-modes-warning.js"></script>
-        <!-- <script src="js/main.js"></script> --> 
-        <script src="js/funcionalidades-angular.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <title>Platz - Suas rotas, Seus Eventos</title>
 
-        <link rel="icon" href="Logo.png"> 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- link Angular -->
+        <script type="text/javascript" src="angular/angular.js"></script>
+
+        <!-- link com o icone que fica no inicio do navegador -->
+        <link rel="icon" href="Logo.png">
+
+
     </head>
-    <body>
+
+    <body >
+
+
+        <!-- inicio do projeto aqui-->
+
     <ng-include src="'view/nav.html'"></ng-include>
 
     <div class="espaco"></div>
-    <div class="jumbotron corpo-sobre">
-        <div class="container">
-            <h1>PLATZ - Suas Rotas, Seus Eventos</h1>
-            <p>Projeto Voltado a Necessidade de Rotas seguras a eventos,
-                Aqui você consegue encontrar os eventos mais badalados pode
-                avaliar e dar sua nota, alem muitas outras coisas</p>
-            <p><button type="button" class="btn btn-primary btn-lg btn-contato" data-toggle="modal" data-target="#myModal">
-                    Entrar em Contato
-                </button></p>
-        </div>
-    </div>
-    <div class="container marketing">
-        <div class="row">
 
-            <div class="col-lg-6">
+   <!--Section: Testimonials v.2-->
+<section class="section">
 
+    <!--Section heading-->
+    <h1 class="section-heading">Testimonials</h1>
+    <!--Section sescription-->
 
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel">Envie um email para o Platz</h4>
-                            </div>
-                            <div class="modal-body">
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1" class="carousel testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
 
-                                <div class="container">
-                                    <form>
-                                        <div class="form-group row">
-                                            <label for="inputNome3" class="col-sm-2 col-form-label">Nome</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control input-contato" id="inputNome3" placeholder="Ex: Maria" required="inputNome3" maxlength="50" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control input-contato" id="inputEmail3" placeholder="Ex: Maria" required="inputEmail3" maxlength="50" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputAssunto3" class="col-sm-2 col-form-label">Selecione Um Assunto</label>
-                                            <div class="col-sm-10">
-                                                <select class="form-control input-contato">
-                                                    <option> -- Selecione um Assunto --</option>
-                                                </select>
-                                            </div>
-                                        </div>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
 
-                                        <div class="form-group row">
-                                            <label for="inputMensagem3" class="col-sm-2 col-form-label">Mensagem</label>
-                                            <div class="col-sm-10">
-
-                                                <textarea id="mensagem" class="form-control input-contato" rows="5" required="mensagem" maxlength="500"  ></textarea>
-                                            </div>
-                                        </div>
-
-
-
-                                    </form>
-                                </div>
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                <button type="button" class="btn btn-primary">Enviar</button>
-                            </div>
-                        </div>
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="http://mdbootstrap.com/images/avatars/img%20(1).jpg" class="img-circle img-fluid">
                     </div>
-                </div> <!-- fim da div modal -->
+                    <!--Content-->
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam vel repudiandae excepturi tenetur illo.</p>
 
-            </div> <!-- fim da div que coloca colunas -->
-        </div> <!-- fim da div row -->
+                    <h4>Anna Deynah</h4>
+                    <h5>Founder at ET Company</h5>
 
-        <div class="row">
-            <div class="sobre-criadores">
-                <div class="col-md-3">
-                    <img class="img-circle" src="img/sobreAndy.png" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Anderson Pessoa</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-circle" src="img/sobreGabs.png" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Gabriela Nunes</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-circle" src="img/sobreChris.png" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Christian Xavier</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-circle" src="img/sobreJuh.png" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Juliana Cerqueira</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <!--Review-->
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star-half-full"> </i>
                 </div>
 
-            </div><!-- fim da div sobre-criadores -->
+            </div>
+            <!--/First slide-->
 
-        </div> <!-- fim da div row -->
+            <!--Second slide-->
+            <div class="carousel-item">
 
-    </div><!-- fim da div container -->
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="http://mdbootstrap.com/images/avatars/img%20(2).jpg" class="img-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <p><i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
 
-    <div class="footer-sobre">
-        <ng-include src="'view/footer.html'"></ng-include>
+                    <h4>Maria Kate</h4>
+                    <h5>Photographer at Studio LA</h5>
+
+                    <!--Review-->
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                </div>
+
+            </div>
+            <!--/Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="http://mdbootstrap.com/images/avatars/img%20(3).jpg" class="img-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <p><i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium , totam rem aperiam, eaque ipsa quae ab illo.</p>
+
+                    <h4>John Doe</h4>
+                    <h5>Front-end Developer in NY</h5>
+                    
+                    <!--Review-->
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star"> </i>
+                    <i class="fa fa-star-o"> </i>
+                </div>
+
+            </div>
+            <!--/Third slide-->
+        </div>
+        <!--/.Slides-->
+
+        <!--Controls-->
+        <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
     </div>
+    <!--/.Carousel Wrapper-->
 
-    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Clique no botão para voltar ao topo da pagina" data-toggle="tooltip" data-placement="left">Voltar ao topo</a>
+</section>
 
-    <script type="text/javascript">
-        angular.module("platz", []);
-    </script>
+
+
+    <!-- /Start your project here-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- angular app script -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- esconder formularios -->
+    <script type="text/javascript" src="js/esconder-form-cad.js"></script>
+
+
+
 </body>
+
 </html>
