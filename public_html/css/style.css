@@ -212,10 +212,10 @@ footer.page-footer {
 */
 .img-perfil-empresa
 {
-   margin: 0 auto;
-   width: 250px;
-   height: 250px;
-   border-radius: 100px;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
 }
 .bg-empresa 
 {
@@ -244,3 +244,43 @@ footer.page-footer {
 *CADASTRO DE USUARIO/EMPRESA
 */
 
+/*
+* PAGINA DE SOBRE
+*/
+#section-projeto
+{
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#section-projeto .jumbotron
+{
+    background: #dcdcdc;
+}
+#section-integrantes .section-heading .cls.fa-group:before, .fa-users:before {
+    margin-right: 25px;
+}
+#section-integrantes .card
+{
+        background: rgba(189, 195, 199,0.4);
+}
+#section-integrantes h1
+{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.avatar-integrante
+{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.avatar-integrante img
+{
+    width: 100%;
+}
+/*
+* FIM PAGINA DE SOBRE
+*/
