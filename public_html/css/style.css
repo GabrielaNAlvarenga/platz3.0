@@ -254,7 +254,10 @@ footer.page-footer {
     margin-top: 2%;
     margin-bottom: 5%;
 }
-
+#section-integrantes
+{
+    margin-bottom: 10%;
+}
 #section-projeto .jumbotron
 {
     background: #dcdcdc;
@@ -280,6 +283,12 @@ footer.page-footer {
 .avatar-integrante img
 {
     width: 100%;
+}
+.cabecalho-form-sobre
+{
+    background: rgba(230, 126, 34,1.0) ;
+    color: white;
+    margin-bottom: 50px;
 }
 /*
 * FIM PAGINA DE SOBRE

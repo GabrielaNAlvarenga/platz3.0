@@ -107,7 +107,7 @@ img {
 .pagination .active .page-link {
     border-radius: 2px;
     transition: all 0.2s linear;
-    @extend.z-depth-1;
+    @extend .z-depth-1;
 }
 
 .pagination .page-link {

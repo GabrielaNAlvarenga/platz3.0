@@ -23,6 +23,8 @@
         <!-- link Angular -->
         <script type="text/javascript" src="angular/angular.js"></script>
 
+       
+
         <!-- link com o icone que fica no inicio do navegador -->
         <link rel="icon" href="Logo.png">
 
@@ -49,9 +51,7 @@
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-contact">
-                Enviar Mensagem
-            </button>
+
         </div>
     </div>
     <!-- /.sobre platz -->
@@ -84,7 +84,7 @@
             </div>
             <!--/.Card-->
         </div> <!-- /.col-md-3 -->
-        
+
         <div class="col-md-3">
             <!--Card-->
             <div class="card card-cascade wider">
@@ -134,7 +134,7 @@
             </div>
             <!--/.Card-->
         </div> <!-- /.col-md-3 -->
-        
+
         <div class="col-md-3">
             <!--Card-->
             <div class="card card-cascade wider">
@@ -162,59 +162,85 @@
 
     </div>
 
-    <!-- Modal Contact -->
-    <div class="modal fade modal-ext" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <!--Content-->
-            <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">Escreva Para Nós</h4>
+
+    <!--Section: Contact v.1-->
+    <section class="section m-b-4">           
+
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <!--Form with header-->
+                <div class="card">
+
+                    <div class="card-block">
+                        <!--Header-->
+                        <div class="form-header cabecalho-form-sobre">
+                            <h3><i class="fa fa-envelope"></i> Escreva Para Nós:</h3>
+                        </div>
+
+                        <p>Entre em contato com nossa equipe, nos dê sua opinião</p>
+                        <br>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" id="form3" class="form-control">
+                            <label for="form3">Nome</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="text" id="form2" class="form-control">
+                            <label for="form2">Email</label>
+                        </div>
+
+                        <div class="md-form ">
+                           
+                            <div class="btn-group">
+                                <button class="btn btn-warning dropdown-toggle" type="button" 
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -- Selecione um Assunto --</button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix"></i>
+                            <textarea type="text" id="form8" class="md-textarea"></textarea>
+                            <label for="form8">Mensagem</label>
+                        </div>
+
+                        <div class="text-xs-center">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+
+                    </div>
+
                 </div>
-                <!--Body-->
-                <div class="modal-body">
-                    <p>Nos envie uma mensagem com sua duvida ou opinião, nós da equipe 
-                        platz ficariamos felizes com sua mensagem.</p>
-                    <br>
-                    <div class="md-form">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="form22" class="form-control">
-                        <label for="form42">Nome</label>
-                    </div>
+                <!--/Form with header-->
 
-                    <div class="md-form">
-                        <i class="fa fa-envelope prefix"></i>
-                        <input type="text" id="form32" class="form-control">
-                        <label for="form34">Email</label>
-                    </div>
-
-                    <div class="md-form">
-                        <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="form32" class="form-control">
-                        <label for="form34">Assunto</label>
-                    </div>
-
-                    <div class="md-form">
-                        <i class="fa fa-pencil prefix"></i>
-                        <textarea type="text" id="form8" class="md-textarea"></textarea>
-                        <label for="form8">Mensagem</label>
-                    </div>
-
-                    <div class="text-xs-center">
-                        <button class="btn btn-primary">Enviar</button>
-                    </div>
-                </div>
-                <!--Footer-->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                </div>
             </div>
-            <!--/.Content-->
+            <!--/First column-->
+
+            
+
         </div>
-    </div>
+
+    </section>
+    <!--/Section: Contact v.1-->
+
+
+
 
 
 
