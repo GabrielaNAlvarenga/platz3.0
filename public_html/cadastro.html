@@ -50,308 +50,327 @@
             <p>Ao escolher se cadastrar como usuario , você tera mais facilidade a encontrar o caminho certo
                 para os eventos que você marcou presençã, alem de poder avaliar e entrar em contato direto com a empresa
                 organizadora do evento</p>
-           
+
         </div>
     </div>
 
     <div id="box-toggle">
-        
-        <button class="btn-warning btn-lg" id="btnEmpresa" onclick="Mudarestado('cadastroEmpresa', 'cadastroUsuario'), selecionar('btnEmpresa', 'btnUsuario' )">EMPRESA</button>
-        <button class="btn-primary btn-lg" id="btnUsuario" onclick="Mudarestado('cadastroUsuario', 'cadastroEmpresa'), selecionar('btnUsuario', 'btnEmpresa')">USUARIO</button>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="col-md-5">
+                <button class="btn-warning-outline btn-lg" id="btnEmpresa" onclick="Mudarestado('cadastroEmpresa', 'cadastroUsuario'), selecionar('btnEmpresa', 'btnUsuario')">
+                    <i class="fa fa-building-o animated fadeInLeftBig"></i> EMPRESA</button>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <button class="btn-default-outline btn-lg" id="btnUsuario" onclick="Mudarestado('cadastroUsuario', 'cadastroEmpresa'), selecionar('btnUsuario', 'btnEmpresa')">
+                    <i class="fa fa-user animated fadeInLeftBig"></i> USUARIO</button>
+            </div>
+        </div>
         <div class="tgl formCadastro" id="cadastroEmpresa">
             <form>
 
-                <div class="col-md-6">
+                <div class="col-md-8 corpo-form-cadastro">
 
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Title-->
-                        <h4 class="card-title"><i class="fa fa-lock"></i><strong>Informações Conta</strong></h4>
-                        <div class="col-md-12">
-                            <label for="conta-empresa-img">Imagem de Perfil</label>
-                            <div class="md-form">                
-                                <input id="conta-empresa-img" type="file" multiple>
+                    <div class="col-md-12">
 
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="md-form">  
-                                <input  type="email" id="conta-empresa-email" class="form-control" required=""
-                                        maxlength="75">
-                                <label for="conta-empresa-email">Email</label>
-                            </div>
-                        </div>
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title"><i class="fa fa-lock animated rotateIn"></i><strong> Informações Conta</strong></h4>
+                            <div class="col-md-12">
+                                <label for="conta-empresa-img">Imagem de Perfil</label>
+                                <div class="md-form">                
+                                    <input id="conta-empresa-img" type="file" multiple>
 
-                        <div class="col-md-12">
-                            <div class="md-form">                
-                                <input type="password" id="conta-empresa-senha" class="form-control" required=""
-                                       maxlength="20">
-                                <label for="conta-empresa-senha">Senha</label>
+                                </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="md-form">  
+                                    <input  type="email" id="conta-empresa-email" class="form-control" required=""
+                                            maxlength="75">
+                                    <label for="conta-empresa-email">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form">                
+                                    <input type="password" id="conta-empresa-senha" class="form-control" required=""
+                                           maxlength="20">
+                                    <label for="conta-empresa-senha">Senha</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form">  
+                                    <input  type="password" id="conta-empresa-confirma-senha" class="form-control"
+                                            required="" maxlength="20"> 
+                                    <label for="conta-empresa-confirma-senha">Confirmar a Senha</label>
+                                </div>
+                            </div>                      
+
                         </div>
-                        <div class="col-md-12">
-                            <div class="md-form">  
-                                <input  type="password" id="conta-empresa-confirma-senha" class="form-control"
-                                        required="" maxlength="20"> 
-                                <label for="conta-empresa-confirma-senha">Confirmar a Senha</label>
-                            </div>
-                        </div>                      
+                        <!--/.Card content-->
 
                     </div>
-                    <!--/.Card content-->
 
-                </div>
+                    <div class="col-md-12">
 
-                <div class="col-md-6">
-
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Title-->
-                        <h4 class="card-title"><i class="fa fa-building-o"></i><strong>Informações Empresariais</strong></h4>
-                        <div class="col-md-12">
-                            <div class="md-form">                
-                                <input type="text" id="conta-empresa-razao" class="form-control" required=""
-                                       maxlength="35">
-                                <label for="conta-empresa-razao">Razão Social</label>
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title"><i class="fa fa-building-o animated rotateIn"></i><strong> Informações Empresariais</strong></h4>
+                            <div class="col-md-12">
+                                <div class="md-form">                
+                                    <input type="text" id="conta-empresa-razao" class="form-control" required=""
+                                           maxlength="35">
+                                    <label for="conta-empresa-razao">Razão Social</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="md-form">  
-                                <input  type="text" id="conta-empresa-nomeFantasia" class="form-control" required=""
-                                        maxlength="30">
-                                <label for="conta-empresa-nomeFantasia">Nome Fantasia</label>
+                            <div class="col-md-12">
+                                <div class="md-form">  
+                                    <input  type="text" id="conta-empresa-nomeFantasia" class="form-control" required=""
+                                            maxlength="30">
+                                    <label for="conta-empresa-nomeFantasia">Nome Fantasia</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-12">
-                            <div class="md-form">                
-                                <input type="text" id="conta-empresa-cnpj" class="form-control" required=""
-                                       maxlength="18">
-                                <label for="conta-empresa-cnpj">CNPJ</label>
+                            <div class="col-md-12">
+                                <div class="md-form">                
+                                    <input type="text" id="conta-empresa-cnpj" class="form-control" required=""
+                                           maxlength="18">
+                                    <label for="conta-empresa-cnpj">CNPJ</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="conta-empresa-telefone1" class="form-control" required=""
-                                        maxlength="12">
-                                <label for="conta-empresa-telefone1">Telefone 1</label>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="conta-empresa-telefone1" class="form-control" required=""
+                                            maxlength="12">
+                                    <label for="conta-empresa-telefone1">Telefone 1</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="conta-empresa-telefone2" class="form-control" required=""
-                                       maxlength="12">
-                                <label for="conta-empresa-telefone2">Telefone 2</label>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="conta-empresa-telefone2" class="form-control" required=""
+                                           maxlength="12">
+                                    <label for="conta-empresa-telefone2">Telefone 2</label>
+                                </div>
                             </div>
-                        </div>
 
+
+                        </div>
+                        <!--/.Card content-->
 
                     </div>
-                    <!--/.Card content-->
+                    <!--/.Card-->
+                    <div class="col-md-12">
 
-                </div>
-                <!--/.Card-->
-                <div class="col-md-12">
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title"><i class="fa fa-map-marker animated rotateIn"></i><strong> Endereço</strong></h4>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="evento-cep" class="form-control">
+                                    <label for="conta-empresa-cep">CEP</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="evento-numero" class="form-control">
+                                    <label for="conta-empresa-numero">Número</label>
+                                </div>
+                            </div>
 
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Title-->
-                        <h4 class="card-title"><i class="fa fa-map-marker"></i><strong>Endereço</strong></h4>
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="evento-cep" class="form-control">
-                                <label for="conta-empresa-cep">CEP</label>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="evento-rua" class="form-control">
+                                    <label for="conta-empresa-rua">Rua</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="evento-numero" class="form-control">
-                                <label for="conta-empresa-numero">Número</label>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="evento-bairro" class="form-control">
+                                    <label for="conta-empresa-bairro">Bairro</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="evento-rua" class="form-control">
-                                <label for="conta-empresa-rua">Rua</label>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="evento-complemento" class="form-control">
+                                    <label for="conta-empresa-complemento">Complemento</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="evento-bairro" class="form-control">
-                                <label for="conta-empresa-bairro">Bairro</label>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="evento-cidade" class="form-control">
+                                    <label for="conta-empresa-cidade">Cidade</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="evento-complemento" class="form-control">
-                                <label for="conta-empresa-complemento">Complemento</label>
-                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="evento-cidade" class="form-control">
-                                <label for="conta-empresa-cidade">Cidade</label>
-                            </div>
-                        </div>
+                        <!--/.Card content-->
 
+                        <div>
+                        <button class="btn btn-lg btn-warning"><i class="fa fa-check"></i> Cadastrar</button>
+                        </div>
                     </div>
-                    <!--/.Card content-->
+
+
 
                 </div>
-
-
-
-
             </form>
         </div>
 
         <div class="tgl formCadastro" id="cadastroUsuario">
             <form>
 
-                <div class="col-md-6">
+                <div class="col-md-8 corpo-form-cadastro">
 
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Title-->
-                        <h4 class="card-title"><i class="fa fa-lock"></i><strong>Informações Conta</strong></h4>
-                        <div class="col-md-12">
-                            <label for="conta-usuario-img">Imagem de Perfil</label>
-                            <div class="md-form">                
-                                <input id="conta-usuario-img" type="file" multiple>
+                    <div class="col-md-12">
 
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="md-form">  
-                                <input  type="email" id="conta-usuario-email" class="form-control" required=""
-                                        maxlength="75">
-                                <label for="conta-usuario-email">Email</label>
-                            </div>
-                        </div>
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title"><i class="fa fa-lock animated rotateIn"></i><strong>Informações Conta</strong></h4>
+                            <div class="col-md-12">
+                                <label for="conta-usuario-img">Imagem de Perfil</label>
+                                <div class="md-form">                
+                                    <input id="conta-usuario-img" type="file" multiple>
 
-                        <div class="col-md-12">
-                            <div class="md-form">                
-                                <input type="password" id="conta-usuario-senha" class="form-control" required=""
-                                       maxlength="20">
-                                <label for="conta-usuario-senha">Senha</label>
+                                </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="md-form">  
+                                    <input  type="email" id="conta-usuario-email" class="form-control" required=""
+                                            maxlength="75">
+                                    <label for="conta-usuario-email">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form">                
+                                    <input type="password" id="conta-usuario-senha" class="form-control" required=""
+                                           maxlength="20">
+                                    <label for="conta-usuario-senha">Senha</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form">  
+                                    <input  type="password" id="conta-usuario-confirma-senha" class="form-control"
+                                            required="" maxlength="20"> 
+                                    <label for="conta-usuario-confirma-senha">Confirmar a Senha</label>
+                                </div>
+                            </div>                      
+
                         </div>
-                        <div class="col-md-12">
-                            <div class="md-form">  
-                                <input  type="password" id="conta-usuario-confirma-senha" class="form-control"
-                                        required="" maxlength="20"> 
-                                <label for="conta-usuario-confirma-senha">Confirmar a Senha</label>
-                            </div>
-                        </div>                      
+                        <!--/.Card content-->
 
                     </div>
-                    <!--/.Card content-->
 
-                </div>
+                    <div class="col-md-12">
 
-                <div class="col-md-6">
-
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Title-->
-                        <h4 class="card-title"><i class="fa fa-user"></i><strong>Informações Pessoais</strong></h4>
-                        <div class="col-md-12">
-                            <div class="md-form">                
-                                <input type="text" id="conta-usuario-nome" class="form-control" required=""
-                                       maxlength="35">
-                                <label for="conta-usuario-nome">Nome</label>
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title"><i class="fa fa-user animated rotateIn"></i><strong>Informações Pessoais</strong></h4>
+                            <div class="col-md-12">
+                                <div class="md-form">                
+                                    <input type="text" id="conta-usuario-nome" class="form-control" required=""
+                                           maxlength="35">
+                                    <label for="conta-usuario-nome">Nome</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="md-form">  
-                                <input  type="text" id="conta-usuario-cpf" class="form-control" required=""
-                                        maxlength="30">
-                                <label for="conta-usuario-cpf">CPF</label>
+                            <div class="col-md-12">
+                                <div class="md-form">  
+                                    <input  type="text" id="conta-usuario-cpf" class="form-control" required=""
+                                            maxlength="30">
+                                    <label for="conta-usuario-cpf">CPF</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-12">
-                            <div class="md-form">                
-                                <input type="text" id="conta-usuario-dataNacimento" class="form-control" required=""
-                                       maxlength="18">
-                                <label for="conta-usuario-dataNacimento">Data de Nascimento</label>
+                            <div class="col-md-12">
+                                <div class="md-form">                
+                                    <input type="text" id="conta-usuario-dataNacimento" class="form-control" required=""
+                                           maxlength="18">
+                                    <label for="conta-usuario-dataNacimento">Data de Nascimento</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="conta-usuario-telefone" class="form-control" required=""
-                                        maxlength="12">
-                                <label for="conta-usuario-telefone">Telefone </label>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="conta-usuario-telefone" class="form-control" required=""
+                                            maxlength="12">
+                                    <label for="conta-usuario-telefone">Telefone </label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="conta-usuario-celular" class="form-control" required=""
-                                       maxlength="12">
-                                <label for="conta-usuario-celular">Celular</label>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="conta-usuario-celular" class="form-control" required=""
+                                           maxlength="12">
+                                    <label for="conta-usuario-celular">Celular</label>
+                                </div>
                             </div>
-                        </div>
 
+
+                        </div>
+                        <!--/.Card content-->
 
                     </div>
-                    <!--/.Card content-->
+                    <!--/.Card-->
+                    <div class="col-md-12">
 
-                </div>
-                <!--/.Card-->
-                <div class="col-md-12">
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title"><i class="fa fa-map-marker animated rotateIn"></i><strong>Endereço</strong></h4>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="evento-cep" class="form-control">
+                                    <label for="conta-usuario-cep">CEP</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="evento-numero" class="form-control">
+                                    <label for="conta-usuario-numero">Número</label>
+                                </div>
+                            </div>
 
-                    <!--Card content-->
-                    <div class="card-block text-xs-center">
-                        <!--Title-->
-                        <h4 class="card-title"><i class="fa fa-map-marker"></i><strong>Endereço</strong></h4>
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="evento-cep" class="form-control">
-                                <label for="conta-usuario-cep">CEP</label>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="evento-rua" class="form-control">
+                                    <label for="conta-usuario-rua">Rua</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="evento-numero" class="form-control">
-                                <label for="conta-usuario-numero">Número</label>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="evento-bairro" class="form-control">
+                                    <label for="conta-usuario-bairro">Bairro</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="evento-rua" class="form-control">
-                                <label for="conta-usuario-rua">Rua</label>
+                            <div class="col-md-6">
+                                <div class="md-form">                
+                                    <input type="text" id="evento-complemento" class="form-control">
+                                    <label for="conta-usuario-complemento">Complemento</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="evento-bairro" class="form-control">
-                                <label for="conta-usuario-bairro">Bairro</label>
+                            <div class="col-md-6">
+                                <div class="md-form">  
+                                    <input  type="text" id="evento-cidade" class="form-control">
+                                    <label for="conta-usuario-cidade">Cidade</label>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="md-form">                
-                                <input type="text" id="evento-complemento" class="form-control">
-                                <label for="conta-usuario-complemento">Complemento</label>
-                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="md-form">  
-                                <input  type="text" id="evento-cidade" class="form-control">
-                                <label for="conta-usuario-cidade">Cidade</label>
-                            </div>
+                        <!--/.Card content-->
+                        <div >
+                            <button class="btn btn-lg btn-warning"><i class="fa fa-check"></i> Cadastrar</button>
                         </div>
-
                     </div>
-                    <!--/.Card content-->
 
                 </div>
-
             </form>
         </div>
 

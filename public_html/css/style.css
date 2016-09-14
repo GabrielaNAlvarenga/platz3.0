@@ -196,29 +196,29 @@ footer.page-footer {
 
 /*estilização das estrelas na pagina de evento especifico*/
 div.stars {
-  width: 270px;
-  display: inline-block;
+    width: 270px;
+    display: inline-block;
 }
 
 input.star { display: none; }
 
 label.star {
-  float: right;
-  padding: 10px;
-  font-size: 36px;
-  color: #444;
-  transition: all .2s;
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
 }
 
 input.star:checked ~ label.star:before {
-  content: '\f005';
-  color: #FD4;
-  transition: all .25s;
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
 }
 
 input.star-5:checked ~ label.star:before {
-  color: #FE7;
-  text-shadow: 0 0 20px #952;
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
 }
 
 input.star-1:checked ~ label.star:before { color: #F62; }
@@ -228,8 +228,8 @@ input.star-3:checked ~ label.star:before { color: #CDCD00; }
 label.star:hover { transform: rotate(-15deg) scale(1.3); }
 
 label.star:before {
-  content: '\f006';
-  font-family: FontAwesome;
+    content: '\f006';
+    font-family: FontAwesome;
 }
 .estrelas
 {
@@ -286,25 +286,26 @@ label.star:before {
 /*
 *PERFIL DA EMPRESA
 */
-.img-perfil-empresa
+.imagem-perfil-empresa-efeito
 {
-    margin: 0 auto;
-    width: 250px;
-    height: 250px;
-    border-radius: 100px;
+    margin-left: 33.3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
-.bg-empresa 
+.evento-perfil-empresa
 {
-    width: 100%;
-    height: 350px;
+    margin-top: 2%;
+}
+.caixa-informacao-perfil-empresa
+{
+    position:absolute;
+    top:20%;
+    left:10%;
+    background: rgba(189, 195, 199,0.4);
+    width: 80%;
+    text-align: center;
+}
 
-}
-.bg-empresa img
-{
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
 
 /*
 * /.PERFIL DA EMPRESA
@@ -316,6 +317,20 @@ label.star:before {
 {
     display: none;
 }
+.corpo-form-cadastro
+{
+    margin-left: 16.7%;
+    margin-top: 5%;
+}
+#box-toggle .fa
+{
+    margin-right: 20px;
+}
+.botaoAtivo:focus, .botaoAtivo:hover {
+    background-color: rgba(149, 165, 166,0.6);
+    color: #fff;
+}
+
 /*
 *CADASTRO DE USUARIO/EMPRESA
 */
@@ -343,7 +358,7 @@ label.star:before {
 }
 #section-integrantes .card
 {
-        background: rgba(189, 195, 199,0.4);
+    background: rgba(189, 195, 199,0.4);
 }
 #section-integrantes h1
 {
