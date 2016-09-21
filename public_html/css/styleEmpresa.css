@@ -132,3 +132,25 @@ and open the template in the editor.
 /*
 * FIM DE CADASTRO DE EVENTOS
 */
+.bg-empresa-editar
+{
+    width: 100%;
+    height: 850px;
+    margin-bottom: 50px;
+    background: orange;
+    opacity: 0.2;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.caixa-informacao-empresa
+{
+        position:absolute;
+    top:10%;
+    left:10%;
+    width: 80%;
+    text-align: center;
+}
+.btn-cadastro
+{
+    margin-left: 41.7%;
+}
