@@ -14,7 +14,20 @@ Estilização de toda a pagina administrativa
     margin-bottom: 5%;
     margin-top: 2%;
 }
-
+.dropdown-menu, .input-group-addon, .pagination .page-item .page-link, .popover {
+    border: 0;
+    color: black;
+    border-radius: 0px;
+}
+.imagem-perfil-adm
+{
+    height: 500px;
+}
+.imagem-perfil-adm img
+{
+    height: 100%;
+    width: 100%;
+}
 /*
 *PAGINA DE CATEGORIA
 */

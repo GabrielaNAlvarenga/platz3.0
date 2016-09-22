@@ -26,17 +26,17 @@ $.fn.pageMe = function (opts) {
     pager.data("curr", 0);
 
     if (settings.showPrevNext) {
-        $('<li><a href="#" class="prev_link">«</a></li>').appendTo(pager);
+        $('<li class="page-item"><a href="#" class="prev_link page-link">«</a></li>').appendTo(pager);
     }
 
     var curr = 0;
     while (numPages > curr && (settings.hidePageNumbers == false)) {
-        $('<li><a href="#" class="page_link">' + (curr + 1) + '</a></li>').appendTo(pager);
+        $('<li class="page-item"><a href="#" class="page_link page-link">' + (curr + 1) + '</a></li>').appendTo(pager);
         curr++;
     }
 
     if (settings.showPrevNext) {
-        $('<li><a href="#" class="next_link">»</a></li>').appendTo(pager);
+        $('<li class="page-item"><a href="#" class="next_link page-link ">»</a></li>').appendTo(pager);
     }
 
     pager.find('.page_link:first').addClass('active');

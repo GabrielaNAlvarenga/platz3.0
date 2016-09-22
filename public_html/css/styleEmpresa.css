@@ -129,6 +129,13 @@ and open the template in the editor.
     margin-left: 40%;
     margin-right: 5%;
 }
+.corpo-form-cadastro-evento
+{
+      margin-left: 16.7%;
+    background: rgba(22, 160, 133,0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
 /*
 * FIM DE CADASTRO DE EVENTOS
 */

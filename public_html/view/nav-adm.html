@@ -1,59 +1,64 @@
 <html>
     <head>
         <title></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-default navbar-fixed-top nav-inicial">
+
+
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-fixed-top nav-inicial">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+                <i class="fa fa-bars"></i>
+            </button>
+
             <div class="container">
-                <div class="navbar-header">
-                    <!-- div onde fica o logo e tambem o botao quando diminui a tela -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand text-hide" href="index.html">Platz
-                    </a>
-                </div>
 
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav link-nav-adm">
-                        <li><a class="link" href="../index.html">Home</a></li>
-
-                        <li><a class="link" href="#">Eventos</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right link-nav-adm">
-                        <li class=" dropdown">
-                            <a href="#" class="dropdown-toggle link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-user"> Meu Perfil </a>
-                            <ul class="dropdown-menu link-perfil">
-                                <li>
-                                    <label><h4>Nome do Usuario</h4></label>
-                                    <div class="row">                                                                   
-                                        <div class="col-md-12">
-                                            <a href="#" class="thumbnail img-perfil">
-                                                <img src="../img/sobreAndy.png" alt="Imagem de Perfil">                                       
-                                            </a>                                                                             
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li><a>Configurações</a></li>
-                                <li><a>Sair <span class="glyphicon glyphicon-log-out"></a></li>
-                            </ul>
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand" href="../index.html"></a>
+                    <!--Links-->
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexAdm.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="assunto.html">Assunto</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="categoria.html">Categoria</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="conta.html">Conta</a>
+                        </li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                    <!--links de login e cadastro-->
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../img/teste-perfil.jpg" class="image-nav">  Meu Perfil</a>
+                            <div class="dropdown-menu dropdown-default" aria-labelledby="dropdownMenu1" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <div class="thumbnail">
+                                    <img src="../img/sobreAndy.png">
+                                    <p>Nome do usuario</p>
+                                    <a href="perfilAdministrador.html">Perfil</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <!--/.Collapse content-->
+
             </div>
+
         </nav>
+        <!--/.Navbar-->
+
+
+
     </body>
 </html>
