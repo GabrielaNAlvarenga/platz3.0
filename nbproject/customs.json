@@ -1,0 +1,15 @@
+{
+    "elements": {
+        "ng-include": {
+            "attributes": {
+                "src": {}
+            }
+        }
+    },
+    "attributes": {
+        "integrity": {},
+        "aria-expanded": {
+            "context": "button"
+        }
+    }
+}

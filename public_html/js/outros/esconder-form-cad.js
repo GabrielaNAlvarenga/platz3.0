@@ -20,12 +20,12 @@ function Mudarestado(formAtivar, formDesativar) {
 
 }
 
-function selecionar(idBotaoAtivo, idBotaoInativo){
-    
+function selecionar(idBotaoAtivo, idBotaoInativo) {
+
     var botaoAtivo = document.getElementById(idBotaoAtivo);
     botaoAtivo.classList.add('botaoAtivo');
-    
+
     var botaoInativo = document.getElementById(idBotaoInativo);
     botaoInativo.classList.remove('botaoAtivo');
-        
+
 }
